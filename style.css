@@ -6,3 +6,19 @@ ul#accordeon{
     padding: 5px;
     background-color: #eee;
 }
+
+ul#accordeon li.actif {
+    width: 500px;
+}
+
+li.actif {
+    display: flex;
+}
+
+li{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}

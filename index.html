@@ -4,39 +4,30 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>TP simples Intéractions</title>
-    <style>
-        .en-rouge {
-            color:red;
-        }
-
-        h1 {
-            transition: color 1s ease-in-out;
-        }
-    </style>
 </head>
 <body>
     <h1>accordéon</h1>
     <ul id="accordeon">
-        <li>
+        <li class>
             <figure><img src="./img/téléchargé%20(2).jpg" alt=""></figure>
-            <figcaption>
+            <div>
                 <h3>Lorem.</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
-            </figcaption>
+            </div>
         </li>
-        <li>
+        <li class>
             <figure><img src="./img/images.jpg" alt=""></figure>
-            <figcaption>
+            <div>
                 <h3>Veniam.</h3>
                 <p>Aut eius incidunt, labore magnam natus pariatur.</p>
-            </figcaption>
+            </div>
         </li>
-        <li>
+        <li class>
             <figure><img src="./img/téléchargé%20(1).jpg" alt=""></figure>
-            <figcaption>
+            <fdiv>
                 <h3>Est.</h3>
                 <p>Labore natus, neque odio quia quo saepe.</p>
-            </figcaption>
+            </fdiv>
         </li>
     </ul>
 
@@ -44,15 +35,16 @@
     <script>
         (function () {
             "use strict";
-            const lesH1 = document.querySelectorAll(H1);
+            const lesli = document.querySelectorAll("li");
         
-        function clickSurH1() {
-
+        function clickSurli() {
+            console.log('click sur :',this)
+            this.classList.toggle('actif')
         }
 
-        for (let i = 0; i < les H1.lenght; i++) {
-            const unH1 = lesH1[i];
-            unH1.addEventListener('click',clickSurH1)
+        for (let i = 0; i < lesli.lenght; i++) {
+            const unli = lesli[i];
+            unli.addEventListener('click',clickSurli)
             }
         }())
     </script>
