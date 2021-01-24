@@ -1,0 +1,8 @@
+ul#accordeon{
+    list-style-type: none;
+    height: 200px;
+    overflow: hidden;
+    margin: 3px;
+    padding: 5px;
+    background-color: #eee;
+}
